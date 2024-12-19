@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зимова казка</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Заголовок -->
+  <header class="header">
+    Зимова казка
+  </header>
+
+  <!-- Описание -->
+  <div class="description">
+    <p>Ласкаво просимо до нашої зимової казки! Напишіть свій лист Діду Морозу, поділіться своїми бажаннями на свята та відчуйте магію зимових свят.</p>
+  </div>
+
+  <!-- Форма для листа -->
+  <div class="form-container">
+    <h2>Лист до Діда Мороза</h2>
+    <div class="santa"></div> <!-- Малюнок Діда Мороза -->
+    <form>
+      <label for="name">Ваше ім'я:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Ваша пошта:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="wish">Ваше бажання:</label>
+      <textarea id="wish" name="wish" rows="4" required></textarea>
+
+      <button type="submit">Відправити листа</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
