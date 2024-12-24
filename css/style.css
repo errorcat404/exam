@@ -3,7 +3,7 @@
         font-family: 'Arial', sans-serif;
         margin: 0;
         padding: 0;
-        background: linear-gradient(to top, #ffffff, #87cefa);
+        background: linear-gradient(to top, #3d5aff, #76cbff);
         background-attachment: fixed;
         color: #333;
         height: 100%;
@@ -85,7 +85,6 @@
         margin-bottom: 20px;
         background-color: #f9f9f9;
         box-sizing: border-box;
-        transition: border-color 0.3s ease, box-shadow 0.3s ease;
       }
       form{
         width: 100%;
@@ -107,7 +106,6 @@
         display: block;
         width: 100%;
         margin-top: 20px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
       }
   
       button:hover {
@@ -117,7 +115,7 @@
   
       /* Малюнок Діда Мороза */
       .santa {
-        width: 200px;
+        width: 150px;
         height: 200px;
         background-image: url('../img/ded.png'); /* Ваше изображение Деда Мороза */
         background-size: contain;
@@ -128,27 +126,4 @@
       /* Анимация для Деда Мороза */
       .form-container:hover .santa {
         transform: scale(1.1);
-      }
-  
-      /* Снежинки */
-      .snowflake {
-        position: absolute;
-        color: #fff;
-        font-size: 1.2em; /* Уменьшенный размер снежинок */
-        opacity: 0.8;
-        z-index: 1;
-        pointer-events: none;
-        animation: fall 10s linear infinite;
-      }
-  
-      @keyframes fall {
-        0% {
-          transform: translateY(-10vh) translateX(0);
-        }
-        50% {
-          transform: translateY(50vh) translateX(15px); /* Падение с отклонением */
-        }
-        100% {
-          transform: translateY(100vh) translateX(-30px); /* Падение с отклонением */
-        }
       }
